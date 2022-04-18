@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>RPS</title>
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+        <main>
+            <h1>Rock Paper Scissors</h1>
+            <h2>Man Vs. Machine</h2>
+            <h3>Battle to the Death!</h3>
+            <h4>Choose your weapon</h4>
+
+            <div class="container">
+    <button class="btn rock">Rock</button>
+    <button class="btn paper">Paper</button>
+    <button class="btn scissors">Scissors</button>
+            </div>
+            
+            <div class="resuts">
+                <h2>Battle Result</h2>
+                <h1 class="result"></h1>
+            </div>
+        </main>
+    </body>
+<script>
+// Connect JS to HTML //
+
+const rock = document.querySelector(".rock");
+const paper = document.querySelector(".paper");
+const scissors = document.querySelector(".scissors");
+const result = document.querySelector(".result");
+
+// Generate a random selection for the machine //
+// Create an array w/ different choices and have a random number generator select an option // 
+const machine = [rock, paper, scissors]
+
+rock.addEventListener('click', function () {    
+   const randomNumber = getRandomNumber()
+    console.log(randomNumber)
+    });
+
+
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * machine.length);
+}
+
+
+
+// Input the user choice //
+
+
+// Compare user choice to machine choice //
+
+// Generate win/ lose/ tie/ results //
+
+// Create play again? button // 
+
+// Track win/lose tally //
+
+// Track who chose what option # of times //
+
+
+</script>
+
+</html>
