@@ -15,6 +15,7 @@ const audio = document.querySelector("#game-audio")
 const startModal = document.querySelector("#start-game")
 
 startBtn.addEventListener("click", () => {
+    audio.volume = 0.1
     audio.play()
     startModal.close()
 })
@@ -135,12 +136,13 @@ const tie = (manWeapon, machineWeapon) => {
 // Create play again? button // 
 const checkScore = () => {
     if (winScore >= 5){
-        modal.showModal()
+        
         img.src = "./images/totoro-jhl.gif"
         img.alt = "Totoro and friends pixel art."
         modalText.textContent = "Your community is saved! You and your family are able to live in harmony with nature, to experience the joys of life."
         resetBtn.textContent = "Save another timeline?"
         exitBtn.textContent = "Enjoy the life you deserve."
+        modal.showModal()
         
     } else if (loseScore >= 5) {
         modal.showModal()
