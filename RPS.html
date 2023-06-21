@@ -7,21 +7,47 @@
 </head>
 <body>
     <main>
-        <h1>Rock Paper Scissors</h1>
-        <h2>Man Vs. Machine</h2>
-        <h3>Battle to the Death!</h3>
-        <h4>Choose your weapon</h4>
+        <section>
+            <h1>Revolution!</h1>
+            <h2>Man Vs. The Machine</h2>
+            <h3>Battle for Survival!</h3>
+        </section>
 
-        <div class="container">
-<button class="btn rock">Rock</button>
-<button class="btn paper">Paper</button>
-<button class="btn scissors">Scissors</button>
-        </div>
+        <section>
+            <h4>Choose your Strategy</h4>
+
+            <div class="container">
+                <button class="btn rock">Direct Action</button>
+                <button class="btn paper">Publications</button>
+                <button class="btn scissors">Demonstrations</button>
+            </div>
+        </section>
         
-        <div class="resuts">
-            <h2>Battle Result</h2>
-            <h1 class="result"></h1>
-        </div>
+        <section>
+                <h2>Battle Result</h2>
+                <h3 class="summary"></h3>
+                <h4 class="result"></h4>
+        </section>
+
+        <section>
+            <h2>Battle History</h2>
+            <div class="score">
+                <span>Wins</span>
+                <span class="wins"></span>
+            </div>
+            <div class="score">
+                <span>Loses</span>
+                <span class="loses"></span>
+            </div>
+        </section>
+
+        <dialog class="modal" id="modal">
+            <span id="modal-text"></span>
+            <button class="reset-btn"></button>
+            <button class="exit-btn"></button>
+        </dialog>
+
+
     </main>
 </body>
 <script type="module" src="main.js"></script>
