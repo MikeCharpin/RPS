@@ -44,7 +44,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
 }
 
 dialog {
@@ -58,4 +57,15 @@ dialog {
 
 img {
     margin: 0 auto;
+}
+
+#app-backdrop {
+    background: rgba(255, 255, 255, 0.7);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#start-game::backdrop {
+    background: linear-gradient(160deg, pink, cyan);
 }

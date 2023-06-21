@@ -9,7 +9,8 @@ const modalText = document.querySelector("#modal-text")
 const resetBtn = document.querySelector(".reset-btn")
 const exitBtn = document.querySelector(".exit-btn")
 const summary = document.querySelector(".summary")
-const img = document.querySelector("img")
+const startImg = document.querySelector("#start-img")
+const endImg = document.querySelector("#end-img")
 const startBtn = document.querySelector("#start-btn")
 const audio = document.querySelector("#game-audio")
 const startModal = document.querySelector("#start-game")
@@ -137,21 +138,21 @@ const tie = (manWeapon, machineWeapon) => {
 const checkScore = () => {
     if (winScore >= 5){
         
-        img.src = "./images/totoro-jhl.gif"
-        img.alt = "Totoro and friends pixel art."
+        endImg.src = "./images/totoro-jhl.gif"
+        endImg.alt = "Totoro and friends pixel art."
         modalText.textContent = "Your community is saved! You and your family are able to live in harmony with nature, to experience the joys of life."
         resetBtn.textContent = "Save another timeline?"
         exitBtn.textContent = "Enjoy the life you deserve."
         modal.showModal()
         
     } else if (loseScore >= 5) {
-        modal.showModal()
-        img.src = "./images/notoriety-jeffinvelcros.gif"
-        img.alt = "Two girls hiding from robots pixel art."
+        
+        endImg.src = "./images/notoriety-jeffinvelcros.gif"
+        endImg.alt = "Two girls hiding from robots pixel art."
         modalText.textContent = "The ruling class have automated away the need for your freedom. You're being emprisoned for being poor, to be used as slave labor."
         resetBtn.textContent = "Go back to 1984?"
         exitBtn.textContent = "Surrender to your oppressors."
-        
+        modal.showModal()
     }
 }
 
