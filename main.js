@@ -10,6 +10,20 @@ const resetBtn = document.querySelector(".reset-btn")
 const exitBtn = document.querySelector(".exit-btn")
 const summary = document.querySelector(".summary")
 const img = document.querySelector("img")
+const startBtn = document.querySelector("#start-btn")
+const audio = document.querySelector("#game-audio")
+const startModal = document.querySelector("#start-game")
+
+startBtn.addEventListener("click", () => {
+    audio.play()
+    startModal.close()
+})
+
+const gameStart = () => {
+    startModal.showModal()
+}
+
+gameStart()
 
 let winScore = 0
 let loseScore = 0
