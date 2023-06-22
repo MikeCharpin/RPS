@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
     
 </head>
@@ -21,34 +24,37 @@
             <section>
                 <h1>Revolution!</h1>
                 <h2>Humanity Vs. The Machine</h2>
-                <h3>Battle for Survival!</h3>
             </section>
 
             <section>
                 <h4>Choose your Strategy</h4>
 
                 <div class="container">
-                    <button class="btn rock">Direct Action</button>
-                    <button class="btn paper">Publications</button>
-                    <button class="btn scissors">Demonstrations</button>
+                    <button id="rock" class="action-btn"> <img  class="icon-action" src="./images/manonpigrequest-jetpack03.png" alt=""> Direct Action</button>
+                    <button id="paper" class="action-btn"> <img  class="icon-action" src="./images/thedailyprofet-sharnand.png" alt=""> Publications</button>
+                    <button id="scissors" class="action-btn"> <img  class="icon-action" src="./images/calendarchallenge-m0ss-knda-d3ad.png" alt=""> Demonstrations</button>
                 </div>
             </section>
             
-            <section>
-                    <h2>Battle Result</h2>
-                    <h3 class="summary"></h3>
-                    <h4 class="result"></h4>
+            <section id="result-section" >
+                    <h2>Initiative Result</h2>
+                    <div class="result-text">
+                        <h3 class="summary">Its a beautiful day to make the world a better place!</h3>
+                        <h3 class="result">Give'em Hell!</h3>
+                    </div>
             </section>
 
-            <section>
-                <h2>Battle History</h2>
-                <div class="score">
-                    <span>Wins</span>
-                    <span class="wins"></span>
-                </div>
-                <div class="score">
-                    <span>Loses</span>
-                    <span class="loses"></span>
+            <section id="score-section">
+                <h2>Movement History</h2>
+                <div class="score-cards">
+                    <div class="score">
+                        <span>Wins</span>
+                        <span class="wins"></span>
+                    </div>
+                    <div class="score">
+                        <span>Loses</span>
+                        <span class="loses"></span>
+                    </div>
                 </div>
             </section>
 
