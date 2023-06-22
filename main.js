@@ -17,6 +17,27 @@ const startModal = document.querySelector("#start-game")
 const app = document.querySelector("main")
 const appBackdrop = document.querySelector("#app-backdrop")
 
+// Music // 
+const openingMusic = ""
+const happyMusic = "./audio/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"
+const scaryMusic = "./audio/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
+const enjoymentEndingMusic = "./audio/30sec-2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.mp3"
+const surrenderEndingMusic = "./audio/Faster-Version-2021-04-09_-_Distorted_Doom_-_David_Fesliyan.mp3"
+
+// Images // 
+const openingImage = ""
+
+const happyImage = "./images/Totoro-uglypenguin.gif"
+const happyImageAlt = "Totoro and spirit friends in a tree with music in the air."
+
+const scaryImage = "./images/notoriety-jeffinvelcros.gif"
+const scaryImageAlt = "Two girls hiding from robots pixel art."
+
+const enjoymentEndingImage = `<img src="./images/totoro-jhl.gif" alt="Totoro and friends running through the woods by refelctive water.">`
+
+const surrenderEndingImage = `<img src="./images/thesweepsquadhascome-kingpix.gif" alt="Cyborg robots marching.">`
+
+
 startBtn.addEventListener("click", () => {
     audio.volume = 0.4
     audio.play()
@@ -139,35 +160,33 @@ const tie = (manWeapon, machineWeapon) => {
 // Create play again? button // 
 const checkScore = () => {
     if (winScore >= 5){
-        
-        endImg.src = "./images/Totoro-uglypenguin.gif"
-        endImg.alt = "Totoro and friends pixel art."
+        endImg.src = happyImage
+        endImg.alt = happyImageAlt
         modalText.textContent = "Your community is saved! You and your family are able to live in harmony with nature, to experience the joys of life."
         resetBtn.textContent = "Save another timeline?"
         exitBtn.textContent = "Enjoy the life you deserve."
         exitBtn.addEventListener('click', () => {
-            audio.src = "./audio/30sec-2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.mp3"
+            audio.src = enjoymentEndingMusic
             audio.play()
-            appBackdrop.innerHTML = `<img src="./images/totoro-jhl.gif" alt="">`
+            appBackdrop.innerHTML = enjoymentEndingImage
         })
-        audio.src = "./audio/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"
+        audio.src = happyMusic
             audio.play()
         modal.showModal()
         
     } else if (loseScore >= 5) {
-        
-        endImg.src = "./images/notoriety-jeffinvelcros.gif"
-        endImg.alt = "Two girls hiding from robots pixel art."
+        endImg.src = scaryImage
+        endImg.alt = scaryImageAlt
         modalText.textContent = `The ruling class have automated away the need for your freedom. You're being emprisoned for being poor. 
         To be used as slave labor.`
         resetBtn.textContent = "Go back to 1984?"
         exitBtn.textContent = "Surrender to your oppressors."
         exitBtn.addEventListener('click', () => {
-            audio.src = "./audio/Faster-Version-2021-04-09_-_Distorted_Doom_-_David_Fesliyan.mp3"
+            audio.src = surrenderEndingMusic
             audio.play()
-            appBackdrop.innerHTML = `<img src="./images/thesweepsquadhascome-kingpix.gif" alt="">`
+            appBackdrop.innerHTML = surrenderEndingImage
         })
-        audio.src = "./audio/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
+        audio.src = scaryMusic
             audio.play()
         modal.showModal()
     }
