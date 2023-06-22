@@ -14,9 +14,10 @@ const endImg = document.querySelector("#end-img")
 const startBtn = document.querySelector("#start-btn")
 const audio = document.querySelector("#game-audio")
 const startModal = document.querySelector("#start-game")
+const app = document.querySelector("main")
 
 startBtn.addEventListener("click", () => {
-    audio.volume = 0.1
+    audio.volume = 0.4
     audio.play()
     startModal.close()
 })
@@ -143,15 +144,24 @@ const checkScore = () => {
         modalText.textContent = "Your community is saved! You and your family are able to live in harmony with nature, to experience the joys of life."
         resetBtn.textContent = "Save another timeline?"
         exitBtn.textContent = "Enjoy the life you deserve."
+        audio.src = "./audio/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"
+        audio.play()
         modal.showModal()
         
     } else if (loseScore >= 5) {
         
         endImg.src = "./images/notoriety-jeffinvelcros.gif"
         endImg.alt = "Two girls hiding from robots pixel art."
-        modalText.textContent = "The ruling class have automated away the need for your freedom. You're being emprisoned for being poor, to be used as slave labor."
+        modalText.textContent = `The ruling class have automated away the need for your freedom. You're being emprisoned for being poor. 
+        To be used as slave labor.`
         resetBtn.textContent = "Go back to 1984?"
         exitBtn.textContent = "Surrender to your oppressors."
+        exitBtn.addEventListener('click', () => {
+            
+            app.innerHTML = `<img src="./images/thesweepsquadhascome-kingpix.gif" alt="">`
+        })
+        audio.src = "./audio/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
+        audio.play()
         modal.showModal()
     }
 }
