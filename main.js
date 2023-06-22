@@ -15,6 +15,7 @@ const startBtn = document.querySelector("#start-btn")
 const audio = document.querySelector("#game-audio")
 const startModal = document.querySelector("#start-game")
 const app = document.querySelector("main")
+const appBackdrop = document.querySelector("#app-backdrop")
 
 startBtn.addEventListener("click", () => {
     audio.volume = 0.4
@@ -139,13 +140,18 @@ const tie = (manWeapon, machineWeapon) => {
 const checkScore = () => {
     if (winScore >= 5){
         
-        endImg.src = "./images/totoro-jhl.gif"
+        endImg.src = "./images/Totoro-uglypenguin.gif"
         endImg.alt = "Totoro and friends pixel art."
         modalText.textContent = "Your community is saved! You and your family are able to live in harmony with nature, to experience the joys of life."
         resetBtn.textContent = "Save another timeline?"
         exitBtn.textContent = "Enjoy the life you deserve."
+        exitBtn.addEventListener('click', () => {
+            audio.src = "./audio/30sec-2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.mp3"
+            audio.play()
+            appBackdrop.innerHTML = `<img src="./images/totoro-jhl.gif" alt="">`
+        })
         audio.src = "./audio/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"
-        audio.play()
+            audio.play()
         modal.showModal()
         
     } else if (loseScore >= 5) {
@@ -157,11 +163,12 @@ const checkScore = () => {
         resetBtn.textContent = "Go back to 1984?"
         exitBtn.textContent = "Surrender to your oppressors."
         exitBtn.addEventListener('click', () => {
-            
-            app.innerHTML = `<img src="./images/thesweepsquadhascome-kingpix.gif" alt="">`
+            audio.src = "./audio/Faster-Version-2021-04-09_-_Distorted_Doom_-_David_Fesliyan.mp3"
+            audio.play()
+            appBackdrop.innerHTML = `<img src="./images/thesweepsquadhascome-kingpix.gif" alt="">`
         })
         audio.src = "./audio/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
-        audio.play()
+            audio.play()
         modal.showModal()
     }
 }

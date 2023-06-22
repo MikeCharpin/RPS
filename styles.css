@@ -67,13 +67,14 @@ img {
 
 #app-backdrop {
     background: rgba(255, 255, 255, 0.7);
-    margin: 1rem;
-    padding: 1rem;
+    margin: .5rem;
+    padding: .5rem;
     border-radius: 1rem;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #start-game::backdrop {
@@ -84,7 +85,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem auto;
+  margin: .5rem auto;
 }
 
 .icon-action {
@@ -95,7 +96,7 @@ section {
 
 .action-btn {
   margin: .5rem;
-  height: 12rem;
+  height: 11rem;
 }
 
 .container {
@@ -117,13 +118,10 @@ section {
 }
 
 #result-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   height: 8rem;
   width: 90%;
 }
 
-/* .result-text {
-
-} */
+.result-text {
+  text-align: center;
+}
