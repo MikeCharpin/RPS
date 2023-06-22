@@ -71,9 +71,9 @@ Credits:
             Link: https://www.fesliyanstudios.com/royalty-free-music/download/8-bit-presentation/383
 
         Scary Music: 
-            Title: 2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3
-            Author: David Fesliyan
-            Link: https://www.fesliyanstudios.com/royalty-free-music/download/retro-platforming/454
+            Title: slow-2021-08-17_-_8_Bit_Nostalgia_-_www.FesliyanStudios.com.mp3
+            Author: David Renda
+            Link: https://www.fesliyanstudios.com/royalty-free-music/download/8-bit-nostalgia/2289
 
 
         Surrender Ending Music: 

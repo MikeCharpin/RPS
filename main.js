@@ -19,10 +19,10 @@ const appBackdrop = document.querySelector("#app-backdrop")
 
 // Music // 
 const openingMusic = ""
-const happyMusic = "./audio/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"
-const scaryMusic = "./audio/2019-12-11_-_Retro_Platforming_-_David_Fesliyan.mp3"
-const enjoymentEndingMusic = "./audio/30sec-2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.mp3"
-const surrenderEndingMusic = "./audio/Faster-Version-2021-04-09_-_Distorted_Doom_-_David_Fesliyan.mp3"
+const happyMusic = "./audio/editted--2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.ogg"
+const scaryMusic = "./audio/editted--slow-2021-08-17_-_8_Bit_Nostalgia_-_www.FesliyanStudios.com.ogg"
+const enjoymentEndingMusic = "./audio/30sec-2020-06-18_-_8_Bit_Retro_Funk_-_www.FesliyanStudios.com_David_Renda.ogg"
+const surrenderEndingMusic = "./audio/editted--Faster-Version-2021-04-09_-_Distorted_Doom_-_David_Fesliyan.ogg"
 
 // Images // 
 const openingImage = ""
@@ -135,7 +135,7 @@ const battle = (manWeapon, machineWeapon) => {
 
 
 const victory = (manWeapon, machineWeapon) => {
-    summary.textContent = `The ${manWeapon} you organized win the day against the oppressors ${machineWeapon}!`
+    summary.textContent = `The ${manWeapon} you organized wins the day against the oppressors ${machineWeapon}!`
     result.textContent = "You're doing great!"
     winScore++
     pageLoad()
