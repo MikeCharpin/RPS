@@ -177,8 +177,7 @@ const checkScore = () => {
     } else if (loseScore >= 5) {
         endImg.src = scaryImage
         endImg.alt = scaryImageAlt
-        modalText.textContent = `The ruling class have automated away the need for your freedom. You're being imprisoned for being poor. 
-        To be used as slave labor.`
+        modalText.textContent = `The ruling class have automated away the need for your freedom. You're being imprisoned for being poor.`
         resetBtn.textContent = "Go back to 1984?"
         exitBtn.textContent = "Surrender to your oppressors."
         exitBtn.addEventListener('click', () => {
