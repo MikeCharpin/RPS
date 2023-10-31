@@ -39,7 +39,7 @@ const surrenderEndingImage = `<img src="./images/thesweepsquadhascome-kingpix.gi
 
 
 startBtn.addEventListener("click", () => {
-    audio.volume = 0.4
+    audio.volume = 0.1
     audio.play()
     startModal.close()
 })
